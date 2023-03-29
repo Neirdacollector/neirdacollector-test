@@ -1,0 +1,228 @@
+.goji_vinyl {
+  text-align: center;
+}
+
+.goji_vinyl a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.5s;
+  font-size: 1.5em;
+}
+
+.goji_vinyl a:hover {
+  font-size: 1.8em;
+}
+
+.terrainco:hover {
+  color: orangered;
+  text-shadow: orangered 1px 0 10px;
+}
+
+.theli:hover {
+  color: red;
+  text-shadow: red 1px 0 10px;
+}
+
+.thelial:hover {
+  color: rgb(142, 5, 5);
+  text-shadow: rgb(142, 5, 5) 1px 0 10px;
+}
+
+.frommts:hover {
+  color: rgb(211, 178, 108);
+  text-shadow: rgb(211, 178, 108) 1px 0 10px;
+}
+
+.thewoaf:hover {
+  color: rgb(8, 3, 129);
+  text-shadow: rgb(8, 3, 129) 1px 0 10px;
+}
+
+.enfantsau:hover {
+  color: rgb(212, 114, 10);
+  text-shadow: rgb(212, 114, 10) 1px 0 10px;
+}
+
+.mag:hover {
+  color: rgb(143, 143, 141);
+  text-shadow: rgb(143, 143, 141) 1px 0 10px;
+}
+
+.for:hover {
+  color: rgb(98, 69, 5);
+  text-shadow: rgb(75, 52, 4) 1px 0 10px;
+}
+
+.bside:hover {
+  color: rgb(190, 143, 0);
+  text-shadow: rgb(190, 143, 0) 1px 0 10px;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1400px;
+  margin: 70px auto 0;
+  transition: all 0.5s;
+}
+
+section a {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  overflow: hidden;
+  text-align: center;
+  flex-shrink: 0;
+  box-shadow: 0 5px 5px 0;
+}
+
+section a img {
+  width: 100%;
+  height: auto;
+}
+
+section a:hover {
+  scale: 1.3;
+}
+
+/* .terrainc{
+background: linear-gradient(var(--fond), orangered 90%,red);
+}
+
+body.dark .terrainc{
+background: linear-gradient(#333, orangered 90%,red);
+}
+
+.thelink{
+background: linear-gradient( red, rgb(142, 5, 5));
+}
+
+.thelinkalive{
+background: linear-gradient( rgb(142, 5, 5)90%,rgb(142, 5, 5),rgb(211, 178, 108));
+}
+
+.fmts{
+    background: linear-gradient( rgb(211, 178, 108)90%,rgb(211, 178, 108),rgb(8, 3, 129));    
+}
+
+.twoaf{
+background: linear-gradient(rgb(8, 3, 129)90%,rgb(8, 3, 129)10%,rgb(212, 114, 10));
+}
+
+.enfantsa{
+background: linear-gradient(rgb(212, 114, 10)90%,rgb(212, 114, 10),rgb(143, 143, 141));
+}
+
+.magma{
+    background: linear-gradient(rgb(143, 143, 141)90%,rgb(143, 143, 141),rgb(98, 69, 5));
+}
+
+.fortitude{
+background: linear-gradient(rgb(98, 69, 5)90%,rgb(98, 69, 5),rgb(190, 143, 0));
+}
+
+.special{
+background: linear-gradient(rgb(190, 143, 0),rgb(190, 143, 0),var(--fond));
+}
+
+body.dark .special{
+    background: linear-gradient(rgb(190, 143, 0),rgb(190, 143, 0),#333);
+} */
+
+.fmts .block a:hover {
+  color: rgb(77, 57, 12);
+}
+
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.album_name {
+  grid-area: 1 / 1 / 2 / 3;
+  text-decoration: none;
+  text-align: center;
+}
+
+.album_pics {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: 100px 800px 200px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.variant {
+  grid-area: 1 / 1 / 2 / 4;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.princ_pic {
+  grid-area: 2 / 1 / 3 / 4;
+  height: 700px;
+  width: 700px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.princ_pic:hover {
+  scale: 1.3;
+}
+
+.pic {
+  height: 220px;
+  width: 220px;
+  box-shadow: 0 5px 5px 0;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.pic:hover {
+  scale: 2;
+}
+
+.pic1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.pic2 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.pic3 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.variant_descr {
+  grid-area: 2 / 2 / 3 / 3;
+  margin: auto;
+}
+
+.variant_descr h4 {
+  padding: 20px;
+  text-align: center;
+}
+
+.variant_descr h4 strong {
+  text-decoration: underline;
+}
+
+.variant_descr p {
+  padding: 10px;
+}
+
+.variant_descr p strong {
+  text-decoration: underline;
+}

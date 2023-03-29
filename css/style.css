@@ -1,0 +1,316 @@
+.accueil h1 {
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 6em;
+  font-weight: 700;
+}
+
+.accueil h3,
+h4 {
+  text-align: center;
+}
+
+.vinyl, .cd, .merch, .dvd{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 120px repeat(2, 410px);
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+}
+
+.vinyl h2, .cd h2, .merch h2, .dvd h2 {
+  grid-area: 1 / 1 / 2 / 5;
+  text-align: center;
+ 
+}
+
+.vinyl_1, .cd_1, .merch_1, .dvd_1 {
+  grid-area: 2 / 1 / 3 / 2;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 410px;
+}
+.vinyl_2, .cd_2, .merch_2, .dvd_2 {
+  grid-area: 2 / 2 / 3 / 3;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 410px;
+}
+.vinyl_3, .cd_3, .merch_3, .dvd_3 {
+  grid-area: 2 / 3 / 3 / 4;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 410px;
+}
+.vinyl_4, .cd_4, .merch_, .dvd_4 {
+  grid-area: 2 / 4 / 3 / 5;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 410px;
+}
+.vinyl_5, .cd_5, .merch_5, .dvd_5 {
+  grid-area: 3 / 1 / 4 / 2;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 410px;
+}
+.vinyl_6, .cd_6, .merch_6, .dvd_6 {
+  grid-area: 3 / 2 / 4 / 3;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 410px;
+}
+.vinyl_7, .cd_7, .merch_7, .dvd_7 {
+  grid-area: 3 / 3 / 4 / 4;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 410px;
+}
+.vinyl_8, .cd_8, .merch_8, .dvd_8 {
+  grid-area: 3 / 4 / 4 / 5;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 410px;
+}
+
+
+
+.vnlscl img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-darkmode {
+  position: absolute;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn-darkmode i {
+  font-size: 2em;
+  transition: all 0.5;
+}
+.btn-darkmode:hover{
+  color: #f1f1f1;
+}
+
+
+.fa-sun:hover{ 
+  color: #333;
+}
+#scrollbar {
+  height: 7px;
+  border-radius: 0 2px 2px 0;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(to right, rgba(203, 193, 178, 1), #f1f1f1);
+  border: #393939 solid 1px;
+  box-shadow: 2px 0  0 rgba(203, 193, 178, 1);
+  z-index: 5;
+  backdrop-filter: blur(16px);
+}
+
+body.dark #scrollbar {
+  background: linear-gradient(to right,rgba(12, 0, 247, 1), #333 );
+  box-shadow: 2px 0  0 rgba(12, 0, 247, 1);
+}
+
+.gojira, .rammstein, .others{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: 100px 100px 400px;
+grid-column-gap: 3px;
+grid-row-gap: 3px;
+
+}
+
+.gojira h2, .rammstein h2, .others h2{
+grid-area: 1 / 1 / 2 / 6;
+  
+}
+
+.gojira h3, .rammstein h3, .others h3{
+  grid-area: 2 / 1 / 3 / 6;
+  text-align: center;
+}
+
+.gojivinyl, .rammvinyl, .othervinyl{
+  grid-area: 3 / 1 / 4 / 2; 
+  min-width: 100%;
+  max-width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+.gojicd, .rammcd, .othercd{
+  grid-area: 3 / 2 / 4 / 3; 
+  min-width: 100%;
+  max-width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+.gojidvd, .rammdvd, .otherdvd{
+  grid-area: 3 / 3 / 4 / 4;
+  min-width: 100%;
+  max-width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+.gojimerch, .rammmerch, .othermerch{
+  grid-area: 3 / 4 / 4 / 5;
+  min-width: 100%;
+  max-width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+.gojimag, .rammmag, .othermag{
+  grid-area: 3 / 5 / 4 / 6;  
+  min-width: 100%;
+  max-width: 100%;
+  height: 300px;
+  text-align: center;
+  
+}
+
+.goji img, .ramm img, .oth img{
+ min-width: 300px;
+ max-width: 350px;
+  width: 100%; 
+  min-height: 300px;
+  max-height: 350px;
+ height: 100%;
+ box-shadow: 0 5px 5px 0;  
+}
+
+.goji, .ramm, .oth {
+  padding: 0 3px;
+
+  text-decoration: none;
+  font-size: 1.75em;
+  color: #333;
+  transition: all 0.5s;
+}
+
+.goji:hover, .ramm:hover, .oth:hover{
+  color:rgba(203, 193, 178, 1);
+  scale: 1.1;
+}
+
+body.dark .goji:hover, body.dark .ramm:hover, body.dark .oth:hover{
+  color:rgba(12, 0, 247, 1);
+  
+}
+
+
+/*-------- Footer --------*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(var(--fond),rgba(203, 193, 178, 1));
+  text-align: center;
+  padding-top: 50px;
+  
+}
+
+body.dark footer {
+  
+  background: linear-gradient(#333,rgba(12, 0, 247, 1));
+}
+
+footer a{
+
+  transition: all 0.5s;
+}
+
+
+.legal {
+    padding: 0.7%;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.5;
+}
+
+.toheader {
+  font-size: 1.1em;
+  padding: 0.7%;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  transition: all 0.5;
+}
+
+.legal:hover, .toheader:hover{
+font-size: 1.2em;
+
+}
+
+.footline1 {
+  margin-top: 1.5%;
+  margin-right: 5%;
+  width: 28%;
+  height: 0px;
+  border: 2px solid #333;
+}
+
+.footline2 {
+  margin-top: 1.5%;
+  margin-left: 5%;
+  width: 28%;
+  height: 0px;
+  border: 2px solid #333;
+}
+
+body.dark .footline1,body.dark .footline2{
+border: 2px solid #f1f1f1;
+}
+
+.block-rs {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  width: 100%;
+  height: 40%;
+}
+
+.rs-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+  width: 175px;
+  height: 50px;
+  
+}
+
+.rs-footer a i {
+ 
+  margin: 0 -10px;
+  font-size: 2em;
+  color: #333;
+  transition: all 1s;
+}
+body.dark .rs-footer a i{
+  color: #f1f1f1;
+}
+
+.rs-footer a i:hover{
+  font-size: 2.3em;
+  color: rgb(226, 43, 67) !important;
+}
+
+
+
+footer p {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 0.9em;
+}

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --ecriture: #333;
+    --fond: #f1f1f1;
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+body {
+  background: var(--fond) !important;
+  width: 100%;
+  height: 100%;
+  padding-top: 400px;
+}
+
+body.dark{
+    color: #f8f6f6 !important;
+    background: #333 !important;
+}
+
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark p, body.dark i, body.dark a{
+    color: #f1f1f1;
+}
+
+h1{
+  padding-top: 2%;
+  font-size: 4em;
+  font-weight: 500;
+  text-decoration: underline 5px ;
+  text-underline-offset: 15px;
+  color: var(--ecriture);
+  font-family: 'Poppins', sans-serif;
+}
+.accueil h1 {
+  padding-top: 2%;
+  font-size: 6em;
+  font-weight: 400;
+  text-decoration: underline 5px ;
+  text-underline-offset: 15px;
+  color: var(--ecriture);
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+h2 {
+  padding-top: 2%;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-decoration: underline 5px ;
+  text-underline-offset: 10px;
+  color: var(--ecriture);
+}
+
+h3 {
+  padding-top: 2%;
+  font-size: 2em;
+  font-weight: 600;
+  color: var(--ecriture);
+}
+
+h4 {
+  font-size: 1.75em;
+  font-weight: 500;
+  color: var(--ecriture);
+}
+
+p {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: var(--ecriture);
+}
+
+section {
+    background-color: transparent;
+  padding: 20px 10%;
+  color: var(--ecriture);
+}
+.upbtn {
+  height: 60px;
+  width: 60px;
+  background-color:rgba(203, 193, 178,0.7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 1%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+body.dark .upbtn{
+  background-color:rgba(12, 0, 247, 0.7);
+}
+
+.upbtn i {
+  color: white;
+  font-size: 40px;
+  color: var(--ecriture);
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  h1,
+  .accueil h1 {
+    font-size: 2.25em;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  h3 {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .upbtn {
+    height: 45px;
+    width: 45px;
+    right: 6%;
+    bottom: 6%;
+    z-index: 3;
+  }
+
+  .upbtn i {
+    font-size: 30px;
+  }
+}
+
+
