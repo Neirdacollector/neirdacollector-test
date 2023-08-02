@@ -1,5 +1,4 @@
 
-
 // --- Dark Mode --- //
 
 const btnDarkmode = document.querySelector(".btn-darkmode");
@@ -11,25 +10,39 @@ btnDarkmode.addEventListener("click", () => {
     body.classList.add("light");
     body.classList.remove("dark");
     btnDarkmode.innerHTML = '<i class="fa-regular fa-moon"></i>';
-  } else if (body.classList.contains("light")) {
+  } else if(body.classList.contains("light")) {
     body.classList.remove("light");
     body.classList.add("dark");
     btnDarkmode.innerHTML = '<i class="fa-regular fa-sun"></i>';
   }
 });
 
-function themeNuitJour() {
-  const date = new Date();
-  const hour = date.getHours();
+// --- Hour Dark Mode --- //
+$(document).ready(function () {
+  var date = new Date();
+  var hour = date.getHours();
 
-  if (hour > 5 || hour < 19) {
-    document.documentElement.style.setProperty("--ecriture", "#333");
-    document.documentElement.style.setProperty("--fond", "#f1f1f1");
-  } else {
-    document.documentElement.style.setProperty("--ecriture", "#f1f1f1");
-    document.documentElement.style.setProperty("--fond", "#333");
+  if (hour > 19 || hour < 8) {
+    $("body").addClass("dark");
+    btnDarkmode.innerHTML = '<i class="fa-regular fa-sun"></i>';
   }
-}
+});
+
+/* function themeNuitJour() {
+  let date = new Date();
+  let hour = date.getHours();
+  
+  if (hour > 19 || hour < 8) {
+    body.classList.remove("light");
+    body.classList.add("dark");
+   btnDarkmode.innerHTML = '<i class="fa-regular fa-sun"></i>';
+  } else {
+    body.classList.remove("dark");
+    body.classList.add("light");
+    btnDarkmode.innerHTML = '<i class="fa-regular fa-moon"></i>';
+    
+  }
+} */
 
 themeNuitJour();
 
@@ -48,19 +61,3 @@ window.onload = () => {
     scrollbar.style.width = scroll + "px";
   });
 };
-
-// --- Empêcher le Copier/Coller --- //
-
-$(document).ready(function () {
-  $("body").bind("cut copy", function (e) {
-    e.preventDefault();
-  });
-});
-
-// --- Empêcher le Clic Droit --- //
-
-$(document).ready(function () {
-  $("body").on("contextmenu", function (e) {
-    return false;
-  });
-});

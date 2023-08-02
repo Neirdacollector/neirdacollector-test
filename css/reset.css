@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200;300;400;500;600;700;800;900&display=swap');
+
 
 :root{
     --ecriture: #333;
@@ -43,6 +43,7 @@ h1{
   color: var(--ecriture);
   font-family: 'Poppins', sans-serif;
 }
+
 .accueil h1 {
   padding-top: 2%;
   font-size: 6em;
@@ -82,34 +83,9 @@ p {
 }
 
 section {
-    background-color: transparent;
-  padding: 20px 10%;
+  padding: 20px 0%;
   color: var(--ecriture);
 }
-.upbtn {
-  height: 60px;
-  width: 60px;
-  background-color:rgba(203, 193, 178,0.7);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  right: 1%;
-  bottom: 3%;
-  cursor: pointer;
-}
-
-body.dark .upbtn{
-  background-color:rgba(12, 0, 247, 0.7);
-}
-
-.upbtn i {
-  color: white;
-  font-size: 40px;
-  color: var(--ecriture);
-}
-
 
 
 @media only screen and (max-width: 900px) {
@@ -117,13 +93,13 @@ body.dark .upbtn{
   .accueil h1 {
     font-size: 2.25em;
     font-weight: 400;
-    text-decoration: none;
+    text-decoration: underline 2px ;
   }
 
   h2 {
     font-size: 1.75em;
-    font-weight: 400;
-    text-decoration: none;
+    font-weight: 500;
+    text-decoration: underline 2px ;
   }
 
   h3 {
@@ -131,22 +107,16 @@ body.dark .upbtn{
     font-weight: 400;
   }
 
+  h4 {
+  font-size: 1.15em;
+  font-weight: 400;
+  color: var(--ecriture);
+}
+
   p {
     font-size: 1em;
     font-weight: 400;
-  }
-
-  .upbtn {
-    height: 45px;
-    width: 45px;
-    right: 6%;
-    bottom: 6%;
-    z-index: 3;
-  }
-
-  .upbtn i {
-    font-size: 30px;
-  }
+  } 
 }
 
 

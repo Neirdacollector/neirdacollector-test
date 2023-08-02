@@ -1,5 +1,16 @@
+main {
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+}
+
 .goji_vinyl {
   text-align: center;
+}
+
+.suggestion{
+  text-decoration: none;
+  font-size: 2em;
 }
 
 .goji_vinyl a {
@@ -67,7 +78,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 90%;
-  max-width: 1400px;
+  max-width: 1800px;
   margin: 70px auto 0;
   transition: all 0.5s;
 }
@@ -78,7 +89,6 @@ section a {
   margin: 10px;
   overflow: hidden;
   text-align: center;
-  flex-shrink: 0;
   box-shadow: 0 5px 5px 0;
 }
 
@@ -225,4 +235,86 @@ body.dark .special{
 
 .variant_descr p strong {
   text-decoration: underline;
+}
+
+/*         Media Mobile 900px        */
+
+@media only screen and (max-width: 900px) {
+  section a {
+    width: 300px;
+    height: 300px;
+  }
+
+  .description {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 550px 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .album_name {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .variant_descr {
+    grid-area: 3 / 1 / 4 / 2;
+    margin: auto;
+  }
+
+  .variant_descr h4 {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .variant_descr h4 strong {
+    text-decoration: underline;
+  }
+
+  .variant_descr p {
+    padding: 5px;
+  }
+
+  .album_pics {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 100px 320px 60px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    margin: auto;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .variant {
+    grid-area: 1 / 1 / 2 / 4;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .princ_pic {
+    grid-area: 2 / 1 / 3 / 4;
+    height: 300px;
+    width: 300px;
+  }
+
+  .pic {
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 5px 5px 0;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .pic1 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .pic2 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .pic3 {
+    grid-area: 3 / 3 / 4 / 4;
+  }
 }
